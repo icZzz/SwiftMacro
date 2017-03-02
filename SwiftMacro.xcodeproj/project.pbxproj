@@ -15,6 +15,12 @@
 		9AB622EB1E656ACF0071CEF8 /* SwiftMacroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB622EA1E656ACF0071CEF8 /* SwiftMacroTests.swift */; };
 		9AB622F61E656ACF0071CEF8 /* SwiftMacroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB622F51E656ACF0071CEF8 /* SwiftMacroUITests.swift */; };
 		9AB623051E656BB90071CEF8 /* UtilsMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB623041E656BB90071CEF8 /* UtilsMacro.swift */; };
+		9ABA56371E65826200931BFF /* MacroSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABA562E1E65826200931BFF /* MacroSwift.framework */; };
+		9ABA563E1E65826200931BFF /* MacroSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA563D1E65826200931BFF /* MacroSwiftTests.swift */; };
+		9ABA56401E65826200931BFF /* MacroSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ABA56301E65826200931BFF /* MacroSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ABA56431E65826200931BFF /* MacroSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABA562E1E65826200931BFF /* MacroSwift.framework */; };
+		9ABA56441E65826200931BFF /* MacroSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABA562E1E65826200931BFF /* MacroSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9ABA564F1E665EB200931BFF /* UtilsMacro.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9AB623041E656BB90071CEF8 /* UtilsMacro.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +38,42 @@
 			remoteGlobalIDString = 9AB622D11E656ACF0071CEF8;
 			remoteInfo = SwiftMacro;
 		};
+		9ABA56381E65826200931BFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AB622CA1E656ACE0071CEF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ABA562D1E65826200931BFF;
+			remoteInfo = MacroSwift;
+		};
+		9ABA563A1E65826200931BFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AB622CA1E656ACE0071CEF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB622D11E656ACF0071CEF8;
+			remoteInfo = SwiftMacro;
+		};
+		9ABA56411E65826200931BFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AB622CA1E656ACE0071CEF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ABA562D1E65826200931BFF;
+			remoteInfo = MacroSwift;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ABA564A1E65826200931BFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9ABA56441E65826200931BFF /* MacroSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9AB622D21E656ACF0071CEF8 /* SwiftMacro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMacro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +90,12 @@
 		9AB622F51E656ACF0071CEF8 /* SwiftMacroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMacroUITests.swift; sourceTree = "<group>"; };
 		9AB622F71E656ACF0071CEF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB623041E656BB90071CEF8 /* UtilsMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsMacro.swift; sourceTree = "<group>"; };
+		9ABA562E1E65826200931BFF /* MacroSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MacroSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ABA56301E65826200931BFF /* MacroSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroSwift.h; sourceTree = "<group>"; };
+		9ABA56311E65826200931BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ABA56361E65826200931BFF /* MacroSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacroSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ABA563D1E65826200931BFF /* MacroSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroSwiftTests.swift; sourceTree = "<group>"; };
+		9ABA563F1E65826200931BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABA56431E65826200931BFF /* MacroSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +121,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ABA562A1E65826200931BFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ABA56331E65826200931BFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABA56371E65826200931BFF /* MacroSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +145,8 @@
 				9AB622D41E656ACF0071CEF8 /* SwiftMacro */,
 				9AB622E91E656ACF0071CEF8 /* SwiftMacroTests */,
 				9AB622F41E656ACF0071CEF8 /* SwiftMacroUITests */,
+				9ABA562F1E65826200931BFF /* MacroSwift */,
+				9ABA563C1E65826200931BFF /* MacroSwiftTests */,
 				9AB622D31E656ACF0071CEF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +157,8 @@
 				9AB622D21E656ACF0071CEF8 /* SwiftMacro.app */,
 				9AB622E61E656ACF0071CEF8 /* SwiftMacroTests.xctest */,
 				9AB622F11E656ACF0071CEF8 /* SwiftMacroUITests.xctest */,
+				9ABA562E1E65826200931BFF /* MacroSwift.framework */,
+				9ABA56361E65826200931BFF /* MacroSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +203,44 @@
 			name = Macro;
 			sourceTree = "<group>";
 		};
+		9ABA562F1E65826200931BFF /* MacroSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9ABA56301E65826200931BFF /* MacroSwift.h */,
+				9ABA56311E65826200931BFF /* Info.plist */,
+			);
+			path = MacroSwift;
+			sourceTree = "<group>";
+		};
+		9ABA563C1E65826200931BFF /* MacroSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				9ABA563D1E65826200931BFF /* MacroSwiftTests.swift */,
+				9ABA563F1E65826200931BFF /* Info.plist */,
+			);
+			path = MacroSwiftTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9ABA562B1E65826200931BFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABA56401E65826200931BFF /* MacroSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ABA564E1E665E9B00931BFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABA564F1E665EB200931BFF /* UtilsMacro.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9AB622D11E656ACF0071CEF8 /* SwiftMacro */ = {
@@ -146,10 +250,13 @@
 				9AB622CE1E656ACF0071CEF8 /* Sources */,
 				9AB622CF1E656ACF0071CEF8 /* Frameworks */,
 				9AB622D01E656ACF0071CEF8 /* Resources */,
+				9ABA564A1E65826200931BFF /* Embed Frameworks */,
+				9ABA564E1E665E9B00931BFF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9ABA56421E65826200931BFF /* PBXTargetDependency */,
 			);
 			name = SwiftMacro;
 			productName = SwiftMacro;
@@ -192,6 +299,43 @@
 			productReference = 9AB622F11E656ACF0071CEF8 /* SwiftMacroUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9ABA562D1E65826200931BFF /* MacroSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ABA56491E65826200931BFF /* Build configuration list for PBXNativeTarget "MacroSwift" */;
+			buildPhases = (
+				9ABA56291E65826200931BFF /* Sources */,
+				9ABA562A1E65826200931BFF /* Frameworks */,
+				9ABA562B1E65826200931BFF /* Headers */,
+				9ABA562C1E65826200931BFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacroSwift;
+			productName = MacroSwift;
+			productReference = 9ABA562E1E65826200931BFF /* MacroSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9ABA56351E65826200931BFF /* MacroSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ABA564B1E65826200931BFF /* Build configuration list for PBXNativeTarget "MacroSwiftTests" */;
+			buildPhases = (
+				9ABA56321E65826200931BFF /* Sources */,
+				9ABA56331E65826200931BFF /* Frameworks */,
+				9ABA56341E65826200931BFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ABA56391E65826200931BFF /* PBXTargetDependency */,
+				9ABA563B1E65826200931BFF /* PBXTargetDependency */,
+			);
+			name = MacroSwiftTests;
+			productName = MacroSwiftTests;
+			productReference = 9ABA56361E65826200931BFF /* MacroSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +363,17 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9AB622D11E656ACF0071CEF8;
 					};
+					9ABA562D1E65826200931BFF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SUKY3PD99D;
+						ProvisioningStyle = Automatic;
+					};
+					9ABA56351E65826200931BFF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SUKY3PD99D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9AB622D11E656ACF0071CEF8;
+					};
 				};
 			};
 			buildConfigurationList = 9AB622CD1E656ACE0071CEF8 /* Build configuration list for PBXProject "SwiftMacro" */;
@@ -237,6 +392,8 @@
 				9AB622D11E656ACF0071CEF8 /* SwiftMacro */,
 				9AB622E51E656ACF0071CEF8 /* SwiftMacroTests */,
 				9AB622F01E656ACF0071CEF8 /* SwiftMacroUITests */,
+				9ABA562D1E65826200931BFF /* MacroSwift */,
+				9ABA56351E65826200931BFF /* MacroSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +417,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9AB622EF1E656ACF0071CEF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ABA562C1E65826200931BFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ABA56341E65826200931BFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,6 +466,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ABA56291E65826200931BFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ABA56321E65826200931BFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABA563E1E65826200931BFF /* MacroSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -307,6 +493,21 @@
 			isa = PBXTargetDependency;
 			target = 9AB622D11E656ACF0071CEF8 /* SwiftMacro */;
 			targetProxy = 9AB622F21E656ACF0071CEF8 /* PBXContainerItemProxy */;
+		};
+		9ABA56391E65826200931BFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ABA562D1E65826200931BFF /* MacroSwift */;
+			targetProxy = 9ABA56381E65826200931BFF /* PBXContainerItemProxy */;
+		};
+		9ABA563B1E65826200931BFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB622D11E656ACF0071CEF8 /* SwiftMacro */;
+			targetProxy = 9ABA563A1E65826200931BFF /* PBXContainerItemProxy */;
+		};
+		9ABA56421E65826200931BFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ABA562D1E65826200931BFF /* MacroSwift */;
+			targetProxy = 9ABA56411E65826200931BFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,6 +708,78 @@
 			};
 			name = Release;
 		};
+		9ABA56451E65826200931BFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SUKY3PD99D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MacroSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huan.MacroSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9ABA56461E65826200931BFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SUKY3PD99D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MacroSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huan.MacroSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9ABA56471E65826200931BFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SUKY3PD99D;
+				INFOPLIST_FILE = MacroSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huan.MacroSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftMacro.app/SwiftMacro";
+			};
+			name = Debug;
+		};
+		9ABA56481E65826200931BFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SUKY3PD99D;
+				INFOPLIST_FILE = MacroSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huan.MacroSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftMacro.app/SwiftMacro";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -526,6 +799,7 @@
 				9AB622FC1E656ACF0071CEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AB622FD1E656ACF0071CEF8 /* Build configuration list for PBXNativeTarget "SwiftMacroTests" */ = {
 			isa = XCConfigurationList;
@@ -534,12 +808,30 @@
 				9AB622FF1E656ACF0071CEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AB623001E656ACF0071CEF8 /* Build configuration list for PBXNativeTarget "SwiftMacroUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB623011E656ACF0071CEF8 /* Debug */,
 				9AB623021E656ACF0071CEF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ABA56491E65826200931BFF /* Build configuration list for PBXNativeTarget "MacroSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ABA56451E65826200931BFF /* Debug */,
+				9ABA56461E65826200931BFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9ABA564B1E65826200931BFF /* Build configuration list for PBXNativeTarget "MacroSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ABA56471E65826200931BFF /* Debug */,
+				9ABA56481E65826200931BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
